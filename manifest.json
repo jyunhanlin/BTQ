@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "BTQ",
+  "version": "1.0",
+  "description": "Buy Tickets Quickly",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action" :
+  {
+    "default_icon": "icons/icon_b.png",
+    "default_title": "Buy Tickets Quickly",
+    "default_popup": "popup.html"
+  },
+  "permissions" : [
+    "declarativeContent",
+    "activeTab",
+    "tabs", "https://tixcraft.com/*"
+  ]
+}
