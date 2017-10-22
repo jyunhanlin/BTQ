@@ -7,6 +7,12 @@
     "scripts": ["background.js"],
     "persistent": false
   },
+  "content_scripts": [
+    {
+      "matches": ["https://tixcraft.com/*"],
+      "js": ["content_scripts/BTQ_tixcraft.js"]
+    }
+  ],
   "page_action" :
   {
     "default_icon": "icons/icon_b.png",

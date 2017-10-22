@@ -9,6 +9,17 @@ chrome.runtime.onInstalled.addListener(function() {
         ],
         actions: [ 
           new chrome.declarativeContent.ShowPageAction(),
+          //new chrome.declarativeContent.RequestContentScript({js:['content_scripts/firstClick.js']})
+         ]
+      },
+      {
+        conditions: [
+          new chrome.declarativeContent.PageStateMatcher({
+            pageUrl: { pathContains: 'detail'},
+          })
+        ],
+        actions: [ 
+          //new chrome.declarativeContent.ShowPageAction(),
           new chrome.declarativeContent.RequestContentScript({js:['content_scripts/firstClick.js']})
          ]
       }
