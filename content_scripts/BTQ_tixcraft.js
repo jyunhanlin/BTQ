@@ -64,7 +64,7 @@ function step1Actions(activityDate) {
 }
 
 function step2Actions(activitySeat) {
-  for (el of document.getElementsByClassName('select_form_b')) {
+  for (el of document.querySelectorAll('[class^="select_form_"]')) {
     if (el.firstElementChild.innerText.includes(activitySeat)) {
       var id = el.firstElementChild.getAttribute('id')
       document.getElementById(id).click();

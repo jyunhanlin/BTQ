@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Buy Tickets Quickly</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <script src="popup.js"></script>
 </head>
+
 <body>
-    <button id="refresh">Refresh</button>
-    <h3>場次名稱: </h3> <h3 id="activity-title"></h3>
-    <h3>日期: </h3> <select id="activity-date"></select>
-    <h3>座位: </h3> <input id="activity-seat" type="text">
-    <h3>張數: </h3> <input id="activity-ticketNum" type="text">
-    <button id="start">Start</button>
+    <div id="qbt">
+        <button id="refresh">Refresh</button>
+        <div id="content">
+            <h3>場次名稱: </h3>
+            <h3 id="activity-title"></h3>
+            <h3>日期: </h3>
+            <select id="activity-date">
+                <option value="" selected="selected">請選擇日期</option>
+            </select>
+            <div class="input">
+                <h3>座位: </h3>
+                <input id="activity-seat" type="text">
+                <h3>張數: </h3>
+                <input id="activity-ticketNum" type="text">
+            </div>
+            <button id="start">Start</button>
+        </div>
+    </div>
 </body>
 </html>
